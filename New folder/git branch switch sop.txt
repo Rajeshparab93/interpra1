@@ -1,0 +1,138 @@
+---------------- SOP FOR UPLOADING CODE TO GITHUB -------------------
+
+after complete intellije prog., to send it to github get login to github
+create new repository 
+repo name
+tick on read me file
+create repository
+copy code
+create one repo folder near intellije prog. file
+enter in created folder
+select path of repo folder
+hit cmd prompt
+hit cmd " git clone paste path of repo folder here "
+hit enter
+see in repo folder ur folder get create with readme file
+paste intellije prog folder with readme file 
+goto cmd prompt and hit the next cmd " cd tab button " and hit enter
+hit cmd " git add . " nd enter
+hit cmd " git gui " nd enter
+write in empty space " [STNO-2] Initial commit " 
+click on commit
+click on push
+click on push
+click on close
+goto chrome--> refresh github page--> nd see ur code upload on github
+
+--------------------- SOP TO CREATE MASTER BRANCH ------------------------
+
+to create master branch follow , hit below cmd in cmd prompt
+" git checkout -b master "
+hit enter
+
+to check list of available branches, hit below cmd in cmd prompt
+" git branch "
+hit enter
+
+git push
+enter
+git push --set-upstream origin master
+enter
+
+master branch get create successfully here......
+
+----------------------- SOP TO CREATE FEATURE BRANCH ----------------------------
+( feature branch will create in other employees laptop only )
+
+to create feature branch we need to give access to other employee via 
+
+goto-->
+
+Setting
+Collaborators
+Type Password to confirm 
+add people 
+write mail id of employee
+send the mail
+
+from next steps other employee will take care.......
+
+goto gmail
+click on view invitations
+accept invitation
+code
+copy
+create one new repo folder
+select folder path-->  type cmd ---> hit enter
+git clone paste copied url
+enter
+u will see the project all file in repo folder
+cd tab button
+enter
+then copy the project path and import it into intellije for further code development
+
+before creating feature branch we need to create master branch first
+
+for creating master branch..
+git checkout -b master
+enter
+git branch
+enter
+u will see all branches
+
+for creating feature branch...
+git checkout -b rajeshfeature
+enter
+git branch
+enter
+u will see all branches
+
+then goes to IntelliJ Idea their will show our feature branch name at right side bottom of program.
+
+to save changes in project on github follow below steps.....
+
+git gui
+enter
+
+in gui window click on..
+commit ( see on top row )
+stage to commit
+give / write [STNO-2] commit
+commit
+push
+select feature branch ( where u want to push the updated code )
+push
+
+now for uploading updated prog. in master branch , first we hav to make active master branch via following steps....
+
+right click on project name( in intellije )
+git
+branches
+click on master
+click on checkout
+
+to merge data in master , follow the below steps...
+
+right click on project name( in intellije )
+git
+merge
+select feature branch name in the square box
+merge
+
+to push data from master to origin.master ( origin.master is ur manager who gives u the access ), follow the below steps.....
+
+right click on project name( in intellije )
+git
+push
+push
+
+nd ur updated code is available in managers master branch....
+
+
+ 
+
+
+
+
+
+

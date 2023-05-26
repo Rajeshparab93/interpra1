@@ -1,0 +1,35 @@
+1. create spring initializer programme with dependancies spring web + lambok + swagger ( manually ) and import in intellij software
+
+2. write programme ( do not tick on build automatically box ) with api
+
+3. create new file in programme ( file name= Dockerfile )
+
+4. paste below data in Dockerfile..
+   FROM openjdk:17
+   LABEL maintainer="com.csi"
+   ADD target/enter prog name here-0.0.1-SNAPSHOT.jar enter prog name here.jar
+   ENTRYPOINT ["java", "-jar", "enter prog name here.jar"]
+
+5. do clean space install in intellije
+
+6. run the application in intellije
+
+7. in chrome hit api address ( localhost:8080/api and localhost:8080/swagger-ui.html ) to check api is working fine or not
+
+8. after checking stop the programme from intellije
+
+9. for building docker image in docker desktop application---
+
+   goto intellije project folder--> select path-->  enter cmd--> paste command (docker build -t enter prject name:latest .) and hit enter
+
+10. open docker desktop app and click on images to see created prog. image 
+
+11. again open cmd prompt and paste (docker run -p 8081:8080 enter project name ) this cmd to see image file in container and press enter
+
+12. then goto chrome--> refresh swagger url -->  it will show site cant reach --> so to resolve this issue change port number from 8080 to 8081 --> hit refresh --> swagger will work again
+
+13. close cmd prompt to down the application
+
+14. goto docker application --> start the file from containers
+
+15. refresh swagger link in chrome it will work fine
